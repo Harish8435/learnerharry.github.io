@@ -12,14 +12,15 @@ body{
 }
 
 .left{
-    width: 20%;
+    width: 298px;
     position: fixed;
     z-index: 4;
     transition: all ease-in-out 0.5s!important;
+    min-height: 100%!important;
 }
 
 .mobile-nav-toggle {
-    position: fixed;
+    position: absolute;
     right: 2rem;
     top: 2rem;
     z-index: 9998;
@@ -41,17 +42,17 @@ body{
 }
 
 .right{
-    padding-left: 20%;
+    padding-left: 298px;
 }
 
 .p-left{
-    left: -40%;
+    left: -298px;
 }
 
 @media only screen and (max-width: 1400px) {
-    .left{
+    /* .left{
         width: 40%;
-    }
+    } */
 
     .right{
         padding-left: 0%;
@@ -329,5 +330,5 @@ body{
 }
 
 .card-body{
-    height: 22vh;
+    height: max-content;
 }
